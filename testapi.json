@@ -1,0 +1,33 @@
+{
+	"variables": [],
+	"info": {
+		"name": "microckstesting",
+		"_postman_id": "d137c579-87b7-9f16-1517-108ae219310a",
+		"description": "version=1.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "testAPI",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"title\"] = responseBody.has(\"fugiat\");"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "https://jsonplaceholder.typicode.com/todos/3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
